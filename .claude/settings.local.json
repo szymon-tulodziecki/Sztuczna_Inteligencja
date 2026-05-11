@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS16.MULTIDIMENSIONAL\\\\OLAP\\\\Config\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS16.WISLA\\\\OLAP\\\\Config\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS17.MSSQLSERVER\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS16.WISLA\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS17.MSSQLSERVER\\\\OLAP\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS16.WISLA\\\\OLAP\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c \"dir \"\"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS17.MSSQLSERVER\\\\OLAP\\\\Config\\\\\"\" /b 2>&1\")",
+      "PowerShell(cmd /c dir \"C:\\\\Program Files\\\\Microsoft SQL Server\\\\MSAS17.MSSQLSERVER\\\\OLAP\\\\Config\" /b)",
+      "PowerShell(Get-Service *)",
+      "PowerShell(cmd /c \"sqlcmd -S localhost -Q \"\"SELECT name FROM sys.databases WHERE name LIKE '%Adventure%'\"\" 2>&1\")",
+      "PowerShell(cmd /c \"sc qc MSSQLServerOLAPService\")"
+    ]
+  }
+}
